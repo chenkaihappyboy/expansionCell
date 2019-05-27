@@ -23,4 +23,9 @@ class ExpansionCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setContentWithModel(model:cellModel) {
+        self.titleLabel.text = model.title
+        self.contentLabel.text = model.isExpand! ? "" : model.content
+    }
+    
 }
